@@ -1,0 +1,59 @@
+﻿<Window x:Class="Aplicacao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Aplicação de Exercícios" Height="800" Width="1600">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- exercicio 6 -->
+        <StackPanel Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Contador de Cliques" FontSize="14" FontWeight="Bold" Margin="0,0,0,10" FontFamily="Arial Black"/>
+            <Button Content="Contador de Cliques" Width="120" Height="40" Background="Blue" Foreground="White" Click="BtnContador_Click"/>
+        </StackPanel>
+
+        <!-- exercicio 7 -->
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Pagamento Parcelado" FontSize="14" FontWeight="Bold" Margin="0,0,0,10" FontFamily="Arial Black"/>
+            <TextBlock Text="Valor Total:" FontSize="12"/>
+            <TextBox Name="txtValorTotal" Width="120"/>
+            <TextBlock Text="Parcelas:" FontSize="12"/>
+            <ComboBox Name="cbParcelas" Width="120">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="12"/>
+            </ComboBox>
+            <Button Content="Calcular" Width="120" Height="40" Margin="5" Background="Purple" Foreground="White" Click="BtnCalcularParcelas_Click"/>
+        </StackPanel>
+
+        <!-- exercicio 8 -->
+        <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Verificar Dia da Semana" FontSize="14" FontWeight="Bold" Margin="0,0,0,10" FontFamily="Arial Black"/>
+            <DatePicker Name="dpData" Width="120"/>
+            <Button Content="Verificar" Width="120" Height="40" Margin="5" Background="Green" Foreground="White" Click="BtnVerificarDia_Click"/>
+        </StackPanel>
+
+        <!-- exercicio 9 -->
+        <StackPanel Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="On/Off" FontSize="14" FontWeight="Bold" Margin="0,0,0,10" FontFamily="Arial Black"/>
+            <Button Name="btnInterruptor" Content="Desligado" Width="120" Height="40" Background="Purple" Foreground="White" Click="BtnInterruptor_Click"/>
+        </StackPanel>
+
+        <!-- exercicio 10 -->
+        <StackPanel Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Sorteio de Número" FontSize="14" FontWeight="Bold" Margin="0,0,0,10" FontFamily="Arial Black"/>
+            <Button Content="Sortear" Width="120" Height="40" Background="Blue" Foreground="White" Click="BtnSortear_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
+
